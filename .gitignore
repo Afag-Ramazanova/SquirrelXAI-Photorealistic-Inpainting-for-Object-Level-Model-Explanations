@@ -27,11 +27,6 @@ wheels/
 # Jupyter Notebook
 .ipynb_checkpoints
 
-# Outputs
-outputs/
-*.pt
-*.pth
-*.pkl
 
 # Environment variables
 .env

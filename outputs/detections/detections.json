@@ -1,0 +1,1279 @@
+{
+  "012403dc87252ad4_jpg.rf.2ce068708cca26257f0e786664c84b0a.jpg": {
+    "image_path": "squirrel_data/test/images/012403dc87252ad4_jpg.rf.2ce068708cca26257f0e786664c84b0a.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          226.63133239746094,
+          252.54876708984375,
+          400.92236328125,
+          374.56036376953125
+        ],
+        "confidence": 0.8565856218338013,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "052d2bdc3c1808f9_jpg.rf.b7ab1c22743cda5b4e43edd36e004a65.jpg": {
+    "image_path": "squirrel_data/test/images/052d2bdc3c1808f9_jpg.rf.b7ab1c22743cda5b4e43edd36e004a65.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          98.70319366455078,
+          290.44818115234375,
+          231.80377197265625,
+          421.74017333984375
+        ],
+        "confidence": 0.8647702932357788,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "0ea2787c3a9881ce_jpg.rf.413d32461c827cabe54deff12150b0a5.jpg": {
+    "image_path": "squirrel_data/test/images/0ea2787c3a9881ce_jpg.rf.413d32461c827cabe54deff12150b0a5.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          321.9158630371094,
+          222.15753173828125,
+          397.3644104003906,
+          358.39697265625
+        ],
+        "confidence": 0.8518888354301453,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "1e715fab6d21ae93_jpg.rf.019b44ce6e15059da13c86ba02842b7a.jpg": {
+    "image_path": "squirrel_data/test/images/1e715fab6d21ae93_jpg.rf.019b44ce6e15059da13c86ba02842b7a.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          210.41397094726562,
+          273.70709228515625,
+          341.1070251464844,
+          351.00042724609375
+        ],
+        "confidence": 0.7901042103767395,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "2690a5f91b144c5d_jpg.rf.233464ceb0aa8410f3e4742fa700b539.jpg": {
+    "image_path": "squirrel_data/test/images/2690a5f91b144c5d_jpg.rf.233464ceb0aa8410f3e4742fa700b539.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          112.10250854492188,
+          169.46762084960938,
+          282.78826904296875,
+          336.3481750488281
+        ],
+        "confidence": 0.5550599694252014,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "28152607_357060688108880_6719649103946448896_n_jpg.rf.bcc8d5a32fe3536f977e0ee26a3e799c.jpg": {
+    "image_path": "squirrel_data/test/images/28152607_357060688108880_6719649103946448896_n_jpg.rf.bcc8d5a32fe3536f977e0ee26a3e799c.jpg",
+    "num_detections": 2,
+    "detections": [
+      {
+        "bbox": [
+          193.7686004638672,
+          90.0643310546875,
+          320.90643310546875,
+          272.6247863769531
+        ],
+        "confidence": 0.8104066848754883,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      },
+      {
+        "bbox": [
+          0.0,
+          485.8607482910156,
+          88.28070068359375,
+          640.0
+        ],
+        "confidence": 0.4577542245388031,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "2_left_frame1520_jpg.rf.b018c8345ab79d15a6bc31dd8c9d5c29.jpg": {
+    "image_path": "squirrel_data/test/images/2_left_frame1520_jpg.rf.b018c8345ab79d15a6bc31dd8c9d5c29.jpg",
+    "num_detections": 0,
+    "detections": []
+  },
+  "2_left_frame1610_jpg.rf.21e5d1b950c00785c212504e913d3e9c.jpg": {
+    "image_path": "squirrel_data/test/images/2_left_frame1610_jpg.rf.21e5d1b950c00785c212504e913d3e9c.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          46.72844696044922,
+          175.3782958984375,
+          104.01290130615234,
+          282.1881408691406
+        ],
+        "confidence": 0.8631098866462708,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "55f50dcd1355caf5_jpg.rf.cd5e961966605bf1b6e814a3c028e551.jpg": {
+    "image_path": "squirrel_data/test/images/55f50dcd1355caf5_jpg.rf.cd5e961966605bf1b6e814a3c028e551.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          90.56548309326172,
+          221.2479705810547,
+          236.81787109375,
+          352.43060302734375
+        ],
+        "confidence": 0.6873287558555603,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "5c196cbc97a5126d7f0ee8a7be09453e_jpg.rf.952883c7e237dd6d3341cf3218ac7af6.jpg": {
+    "image_path": "squirrel_data/test/images/5c196cbc97a5126d7f0ee8a7be09453e_jpg.rf.952883c7e237dd6d3341cf3218ac7af6.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          289.161865234375,
+          290.17864990234375,
+          334.8629150390625,
+          365.40570068359375
+        ],
+        "confidence": 0.8729864358901978,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "64c6a343cb3e03ae_jpg.rf.32894d1c98f7eac57e4d9c088fbe349b.jpg": {
+    "image_path": "squirrel_data/test/images/64c6a343cb3e03ae_jpg.rf.32894d1c98f7eac57e4d9c088fbe349b.jpg",
+    "num_detections": 2,
+    "detections": [
+      {
+        "bbox": [
+          221.891845703125,
+          256.23834228515625,
+          282.45947265625,
+          375.74566650390625
+        ],
+        "confidence": 0.7909230589866638,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      },
+      {
+        "bbox": [
+          410.781005859375,
+          74.80230712890625,
+          640.0,
+          393.24560546875
+        ],
+        "confidence": 0.46102961897850037,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "7445b2ff0983a501_jpg.rf.3a885ec40731fde952492dcd90770afc.jpg": {
+    "image_path": "squirrel_data/test/images/7445b2ff0983a501_jpg.rf.3a885ec40731fde952492dcd90770afc.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          287.43426513671875,
+          300.83758544921875,
+          422.2791748046875,
+          399.52349853515625
+        ],
+        "confidence": 0.8589681386947632,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "760961d593750514_jpg.rf.75d756292ef0ef5f1105e260a38b986b.jpg": {
+    "image_path": "squirrel_data/test/images/760961d593750514_jpg.rf.75d756292ef0ef5f1105e260a38b986b.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          312.755615234375,
+          275.76788330078125,
+          434.8470458984375,
+          407.7762451171875
+        ],
+        "confidence": 0.8319812417030334,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "831a4c1638a4dc07_jpg.rf.677672b99caf72fcd69b67362f1a6bfd.jpg": {
+    "image_path": "squirrel_data/test/images/831a4c1638a4dc07_jpg.rf.677672b99caf72fcd69b67362f1a6bfd.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          364.997802734375,
+          207.20004272460938,
+          469.2554931640625,
+          246.30270385742188
+        ],
+        "confidence": 0.8773444890975952,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "930f696ea1a6a99d_jpg.rf.c293547f1ac9f436f39fe2c176eea741.jpg": {
+    "image_path": "squirrel_data/test/images/930f696ea1a6a99d_jpg.rf.c293547f1ac9f436f39fe2c176eea741.jpg",
+    "num_detections": 2,
+    "detections": [
+      {
+        "bbox": [
+          227.5322265625,
+          278.8212890625,
+          373.19793701171875,
+          415.501708984375
+        ],
+        "confidence": 0.8104528188705444,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      },
+      {
+        "bbox": [
+          3.656280517578125,
+          299.18011474609375,
+          85.63749694824219,
+          388.10882568359375
+        ],
+        "confidence": 0.3262886106967926,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "9d807b0f20e78202_jpg.rf.87f986d3258c2d11d67293730ff18dec.jpg": {
+    "image_path": "squirrel_data/test/images/9d807b0f20e78202_jpg.rf.87f986d3258c2d11d67293730ff18dec.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          192.26220703125,
+          260.3184814453125,
+          349.9168701171875,
+          377.831787109375
+        ],
+        "confidence": 0.8892759680747986,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "Duke1.jpg": {
+    "image_path": "squirrel_data/test/images/Duke1.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          1227.7640380859375,
+          2737.551513671875,
+          1706.0728759765625,
+          3231.371826171875
+        ],
+        "confidence": 0.8431788682937622,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "Duke2.jpg": {
+    "image_path": "squirrel_data/test/images/Duke2.jpg",
+    "num_detections": 2,
+    "detections": [
+      {
+        "bbox": [
+          1238.294921875,
+          2765.57421875,
+          1958.986572265625,
+          3267.911376953125
+        ],
+        "confidence": 0.8730394244194031,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      },
+      {
+        "bbox": [
+          653.3418579101562,
+          870.3338623046875,
+          877.77880859375,
+          1387.2708740234375
+        ],
+        "confidence": 0.28051498532295227,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "Duke3.jpg": {
+    "image_path": "squirrel_data/test/images/Duke3.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          813.2625732421875,
+          1757.3062744140625,
+          1107.8231201171875,
+          2041.0509033203125
+        ],
+        "confidence": 0.7090568542480469,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "Duke4.jpg": {
+    "image_path": "squirrel_data/test/images/Duke4.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          1567.2410888671875,
+          2132.09130859375,
+          2062.45947265625,
+          2804.181640625
+        ],
+        "confidence": 0.2515808343887329,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "a3b285cdfe5a638f_jpg.rf.b1cc92b71359835530b5e55be2c344c3.jpg": {
+    "image_path": "squirrel_data/test/images/a3b285cdfe5a638f_jpg.rf.b1cc92b71359835530b5e55be2c344c3.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          261.6561584472656,
+          284.58123779296875,
+          343.1836853027344,
+          363.99749755859375
+        ],
+        "confidence": 0.8309406042098999,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "ceb83e8264b5bb55_jpg.rf.2e187efc960753aadeb5fe17846267e6.jpg": {
+    "image_path": "squirrel_data/test/images/ceb83e8264b5bb55_jpg.rf.2e187efc960753aadeb5fe17846267e6.jpg",
+    "num_detections": 2,
+    "detections": [
+      {
+        "bbox": [
+          463.51141357421875,
+          389.7852783203125,
+          561.3795776367188,
+          521.7996826171875
+        ],
+        "confidence": 0.8627181649208069,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      },
+      {
+        "bbox": [
+          348.56341552734375,
+          128.90771484375,
+          567.1470947265625,
+          420.3851318359375
+        ],
+        "confidence": 0.26000019907951355,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "d9edb4c792eaeb73_jpg.rf.3d0c4c9f32654faadef80c577ea97dff.jpg": {
+    "image_path": "squirrel_data/test/images/d9edb4c792eaeb73_jpg.rf.3d0c4c9f32654faadef80c577ea97dff.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          328.98284912109375,
+          266.28228759765625,
+          400.91363525390625,
+          399.74505615234375
+        ],
+        "confidence": 0.8541354537010193,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "e1981c43ae256d7d_jpg.rf.00d8a07fcdecc9c88b74ef0f864f3d8b.jpg": {
+    "image_path": "squirrel_data/test/images/e1981c43ae256d7d_jpg.rf.00d8a07fcdecc9c88b74ef0f864f3d8b.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          257.11883544921875,
+          270.60687255859375,
+          369.94219970703125,
+          397.1685791015625
+        ],
+        "confidence": 0.8815906047821045,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "e5a74b78be48c375_jpg.rf.4a623799160ae2c44cef1e78ccdbd296.jpg": {
+    "image_path": "squirrel_data/test/images/e5a74b78be48c375_jpg.rf.4a623799160ae2c44cef1e78ccdbd296.jpg",
+    "num_detections": 2,
+    "detections": [
+      {
+        "bbox": [
+          274.7767333984375,
+          258.84307861328125,
+          340.6484375,
+          358.99017333984375
+        ],
+        "confidence": 0.7459838390350342,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      },
+      {
+        "bbox": [
+          271.00946044921875,
+          263.59503173828125,
+          339.69537353515625,
+          457.77667236328125
+        ],
+        "confidence": 0.3624233603477478,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "eb11117cdec3017c_jpg.rf.d48981ea980f1c3cdcebce5609503109.jpg": {
+    "image_path": "squirrel_data/test/images/eb11117cdec3017c_jpg.rf.d48981ea980f1c3cdcebce5609503109.jpg",
+    "num_detections": 2,
+    "detections": [
+      {
+        "bbox": [
+          104.81556701660156,
+          406.351806640625,
+          236.9844512939453,
+          499.39111328125
+        ],
+        "confidence": 0.8909464478492737,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      },
+      {
+        "bbox": [
+          424.3941650390625,
+          432.9525146484375,
+          564.0454711914062,
+          523.9618530273438
+        ],
+        "confidence": 0.8535367846488953,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "f26f3415b413e6b9_jpg.rf.45330a9fa52d932ac867f7e109e1ebe2.jpg": {
+    "image_path": "squirrel_data/test/images/f26f3415b413e6b9_jpg.rf.45330a9fa52d932ac867f7e109e1ebe2.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          285.14715576171875,
+          263.1940002441406,
+          390.40521240234375,
+          417.4046936035156
+        ],
+        "confidence": 0.8564692735671997,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "fb638d7a73c3f425_jpg.rf.da17f2d2370aab4c216099265c327e16.jpg": {
+    "image_path": "squirrel_data/test/images/fb638d7a73c3f425_jpg.rf.da17f2d2370aab4c216099265c327e16.jpg",
+    "num_detections": 2,
+    "detections": [
+      {
+        "bbox": [
+          299.79595947265625,
+          241.68873596191406,
+          356.31304931640625,
+          350.4654541015625
+        ],
+        "confidence": 0.47757354378700256,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      },
+      {
+        "bbox": [
+          289.75518798828125,
+          248.83175659179688,
+          356.22979736328125,
+          368.7102355957031
+        ],
+        "confidence": 0.2661994397640228,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "image1.jpg": {
+    "image_path": "squirrel_data/test/images/image1.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          265.7569580078125,
+          161.88824462890625,
+          374.72705078125,
+          337.67138671875
+        ],
+        "confidence": 0.8408579230308533,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "image2.jpg": {
+    "image_path": "squirrel_data/test/images/image2.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          197.17518615722656,
+          344.53662109375,
+          245.8133087158203,
+          418.8634033203125
+        ],
+        "confidence": 0.8786494731903076,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "image3.jpg": {
+    "image_path": "squirrel_data/test/images/image3.jpg",
+    "num_detections": 3,
+    "detections": [
+      {
+        "bbox": [
+          293.35931396484375,
+          130.59860229492188,
+          452.731689453125,
+          291.74371337890625
+        ],
+        "confidence": 0.559920072555542,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      },
+      {
+        "bbox": [
+          268.62017822265625,
+          130.2890625,
+          464.01922607421875,
+          379.340087890625
+        ],
+        "confidence": 0.4442554712295532,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      },
+      {
+        "bbox": [
+          254.513671875,
+          246.31143188476562,
+          440.96197509765625,
+          376.2444152832031
+        ],
+        "confidence": 0.3908710777759552,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "image4.jpg": {
+    "image_path": "squirrel_data/test/images/image4.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          231.04281616210938,
+          220.68490600585938,
+          437.8194274902344,
+          459.2364196777344
+        ],
+        "confidence": 0.8120008111000061,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "image5.jpg": {
+    "image_path": "squirrel_data/test/images/image5.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          100.06795501708984,
+          261.23046875,
+          213.59860229492188,
+          412.1397705078125
+        ],
+        "confidence": 0.8524904847145081,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "image6.jpg": {
+    "image_path": "squirrel_data/test/images/image6.jpg",
+    "num_detections": 2,
+    "detections": [
+      {
+        "bbox": [
+          248.33895874023438,
+          296.2607727050781,
+          352.1044006347656,
+          408.0412292480469
+        ],
+        "confidence": 0.8860694169998169,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      },
+      {
+        "bbox": [
+          291.14459228515625,
+          0.28598785400390625,
+          387.22296142578125,
+          57.017784118652344
+        ],
+        "confidence": 0.46235623955726624,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "image7.jpg": {
+    "image_path": "squirrel_data/test/images/image7.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          270.0655517578125,
+          245.71221923828125,
+          420.332763671875,
+          385.35430908203125
+        ],
+        "confidence": 0.8230147361755371,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "preview16-4-_jpg.rf.d18622c1f337011b0d63547ad6e8d83a.jpg": {
+    "image_path": "squirrel_data/test/images/preview16-4-_jpg.rf.d18622c1f337011b0d63547ad6e8d83a.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          266.00164794921875,
+          248.74111938476562,
+          341.28375244140625,
+          375.6704406738281
+        ],
+        "confidence": 0.8244094252586365,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "s_123_jpg.rf.7b06860f1b4075c3675bcc85d3bc7a73.jpg": {
+    "image_path": "squirrel_data/test/images/s_123_jpg.rf.7b06860f1b4075c3675bcc85d3bc7a73.jpg",
+    "num_detections": 2,
+    "detections": [
+      {
+        "bbox": [
+          291.6487121582031,
+          304.68365478515625,
+          418.7616882324219,
+          415.82037353515625
+        ],
+        "confidence": 0.7275917530059814,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      },
+      {
+        "bbox": [
+          359.60369873046875,
+          307.935302734375,
+          418.67572021484375,
+          421.8848876953125
+        ],
+        "confidence": 0.6508995890617371,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "s_1262_jpg.rf.3f6a1a516a95e46fa46da2c219729177.jpg": {
+    "image_path": "squirrel_data/test/images/s_1262_jpg.rf.3f6a1a516a95e46fa46da2c219729177.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          289.7136535644531,
+          309.685546875,
+          339.8526306152344,
+          357.6246337890625
+        ],
+        "confidence": 0.8432298302650452,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "s_1458_jpg.rf.d242186993a2ae4f4875116e4a5f90e8.jpg": {
+    "image_path": "squirrel_data/test/images/s_1458_jpg.rf.d242186993a2ae4f4875116e4a5f90e8.jpg",
+    "num_detections": 2,
+    "detections": [
+      {
+        "bbox": [
+          324.40374755859375,
+          425.7669677734375,
+          569.9183349609375,
+          513.09814453125
+        ],
+        "confidence": 0.41317468881607056,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      },
+      {
+        "bbox": [
+          0.0,
+          276.16448974609375,
+          68.7448959350586,
+          378.73699951171875
+        ],
+        "confidence": 0.2939704358577728,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "s_1465_jpg.rf.c21d602bc83d8b0e4f5deca176166163.jpg": {
+    "image_path": "squirrel_data/test/images/s_1465_jpg.rf.c21d602bc83d8b0e4f5deca176166163.jpg",
+    "num_detections": 2,
+    "detections": [
+      {
+        "bbox": [
+          311.6639404296875,
+          99.53315734863281,
+          355.3760986328125,
+          143.36309814453125
+        ],
+        "confidence": 0.8383405804634094,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      },
+      {
+        "bbox": [
+          152.60125732421875,
+          330.8057861328125,
+          185.88214111328125,
+          398.1787109375
+        ],
+        "confidence": 0.33486494421958923,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "s_1672_jpg.rf.f0f41538515daed750ede873dedd19fb.jpg": {
+    "image_path": "squirrel_data/test/images/s_1672_jpg.rf.f0f41538515daed750ede873dedd19fb.jpg",
+    "num_detections": 2,
+    "detections": [
+      {
+        "bbox": [
+          142.27542114257812,
+          130.99560546875,
+          320.8077392578125,
+          386.560546875
+        ],
+        "confidence": 0.750590443611145,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      },
+      {
+        "bbox": [
+          83.90847778320312,
+          128.75006103515625,
+          314.61151123046875,
+          395.22674560546875
+        ],
+        "confidence": 0.4042142927646637,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "s_1699_jpg.rf.e1764256da1a0560de50b2f401269499.jpg": {
+    "image_path": "squirrel_data/test/images/s_1699_jpg.rf.e1764256da1a0560de50b2f401269499.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          151.97146606445312,
+          211.49176025390625,
+          306.046630859375,
+          397.86016845703125
+        ],
+        "confidence": 0.8637897968292236,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "s_1854_jpg.rf.af5319e34207870d1eae19430fbb887a.jpg": {
+    "image_path": "squirrel_data/test/images/s_1854_jpg.rf.af5319e34207870d1eae19430fbb887a.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          280.1678771972656,
+          355.480712890625,
+          349.7714538574219,
+          454.1455078125
+        ],
+        "confidence": 0.46144822239875793,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "s_2179_jpg.rf.a8136cb626d46964997356f3a8228d26.jpg": {
+    "image_path": "squirrel_data/test/images/s_2179_jpg.rf.a8136cb626d46964997356f3a8228d26.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          276.43505859375,
+          224.6759033203125,
+          351.71392822265625,
+          332.243408203125
+        ],
+        "confidence": 0.8932653069496155,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "s_2193_jpg.rf.6c934b44d2f2db50f1ade85cb04e38dc.jpg": {
+    "image_path": "squirrel_data/test/images/s_2193_jpg.rf.6c934b44d2f2db50f1ade85cb04e38dc.jpg",
+    "num_detections": 0,
+    "detections": []
+  },
+  "s_2227_jpg.rf.0787b1b28b530176b9767fddd3d7a16f.jpg": {
+    "image_path": "squirrel_data/test/images/s_2227_jpg.rf.0787b1b28b530176b9767fddd3d7a16f.jpg",
+    "num_detections": 2,
+    "detections": [
+      {
+        "bbox": [
+          337.05926513671875,
+          197.0696258544922,
+          458.50048828125,
+          349.30828857421875
+        ],
+        "confidence": 0.8146921396255493,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      },
+      {
+        "bbox": [
+          124.93679809570312,
+          53.1839599609375,
+          307.7102355957031,
+          148.79473876953125
+        ],
+        "confidence": 0.7386237978935242,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "s_2233_jpg.rf.40a8585fb6f3465f69a049112fe6e9cc.jpg": {
+    "image_path": "squirrel_data/test/images/s_2233_jpg.rf.40a8585fb6f3465f69a049112fe6e9cc.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          278.155517578125,
+          295.8586730957031,
+          366.5838623046875,
+          381.1646423339844
+        ],
+        "confidence": 0.8031949996948242,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "s_2352_jpg.rf.be3f93e883ef15174fd44a6b91e9a95b.jpg": {
+    "image_path": "squirrel_data/test/images/s_2352_jpg.rf.be3f93e883ef15174fd44a6b91e9a95b.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          256.79266357421875,
+          302.222900390625,
+          423.59063720703125,
+          494.454833984375
+        ],
+        "confidence": 0.7438514828681946,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "s_2391_jpg.rf.c114fd1d94a9d17212d176f4ca71b2d3.jpg": {
+    "image_path": "squirrel_data/test/images/s_2391_jpg.rf.c114fd1d94a9d17212d176f4ca71b2d3.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          233.379638671875,
+          331.427978515625,
+          375.46246337890625,
+          436.761962890625
+        ],
+        "confidence": 0.8185248970985413,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "s_2568_jpg.rf.1a5f1a910b2bce46243e35b52ec590b8.jpg": {
+    "image_path": "squirrel_data/test/images/s_2568_jpg.rf.1a5f1a910b2bce46243e35b52ec590b8.jpg",
+    "num_detections": 3,
+    "detections": [
+      {
+        "bbox": [
+          202.09750366210938,
+          164.53623962402344,
+          462.0105895996094,
+          459.9468994140625
+        ],
+        "confidence": 0.6712765693664551,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      },
+      {
+        "bbox": [
+          203.7796630859375,
+          158.2596435546875,
+          442.0576171875,
+          373.97406005859375
+        ],
+        "confidence": 0.48754894733428955,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      },
+      {
+        "bbox": [
+          208.5026092529297,
+          157.74969482421875,
+          394.52557373046875,
+          350.5265808105469
+        ],
+        "confidence": 0.3781159520149231,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "s_2596_jpg.rf.c54601a001cf453917b7a52d91ee6e08.jpg": {
+    "image_path": "squirrel_data/test/images/s_2596_jpg.rf.c54601a001cf453917b7a52d91ee6e08.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          194.26791381835938,
+          209.26026916503906,
+          329.2801818847656,
+          405.4881591796875
+        ],
+        "confidence": 0.8289040327072144,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "s_2608_jpg.rf.5abef3e6751cf94196b99aab44b4917e.jpg": {
+    "image_path": "squirrel_data/test/images/s_2608_jpg.rf.5abef3e6751cf94196b99aab44b4917e.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          277.343017578125,
+          279.59246826171875,
+          354.2208251953125,
+          369.51251220703125
+        ],
+        "confidence": 0.6712021827697754,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "s_268_jpg.rf.e5e58f259324d902f41500603243760f.jpg": {
+    "image_path": "squirrel_data/test/images/s_268_jpg.rf.e5e58f259324d902f41500603243760f.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          384.4224853515625,
+          279.79571533203125,
+          530.2845458984375,
+          511.067626953125
+        ],
+        "confidence": 0.7600905895233154,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "s_2810_jpg.rf.baa748a920ecb9eb3289b26a59d82ad9.jpg": {
+    "image_path": "squirrel_data/test/images/s_2810_jpg.rf.baa748a920ecb9eb3289b26a59d82ad9.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          331.509521484375,
+          199.99505615234375,
+          474.9058837890625,
+          395.33892822265625
+        ],
+        "confidence": 0.8333384394645691,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "s_2959_jpg.rf.1b5708c9f9177ee10cc3b7aed903d6d5.jpg": {
+    "image_path": "squirrel_data/test/images/s_2959_jpg.rf.1b5708c9f9177ee10cc3b7aed903d6d5.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          217.12644958496094,
+          289.14678955078125,
+          364.7266845703125,
+          423.74493408203125
+        ],
+        "confidence": 0.8665083050727844,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "s_2970_jpg.rf.df32a7ae85d491f7efd683ad77804553.jpg": {
+    "image_path": "squirrel_data/test/images/s_2970_jpg.rf.df32a7ae85d491f7efd683ad77804553.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          246.1339111328125,
+          269.45025634765625,
+          433.349853515625,
+          402.64324951171875
+        ],
+        "confidence": 0.8493700623512268,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "s_321_jpg.rf.492bbea7376b5b83a65bfddb6613b992.jpg": {
+    "image_path": "squirrel_data/test/images/s_321_jpg.rf.492bbea7376b5b83a65bfddb6613b992.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          250.43804931640625,
+          226.00323486328125,
+          409.9072265625,
+          396.52294921875
+        ],
+        "confidence": 0.8690246343612671,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "s_679_jpg.rf.ee6b72b69e8d8c51ef9344b764a3ab81.jpg": {
+    "image_path": "squirrel_data/test/images/s_679_jpg.rf.ee6b72b69e8d8c51ef9344b764a3ab81.jpg",
+    "num_detections": 0,
+    "detections": []
+  },
+  "s_730_jpg.rf.d0324a54205fa727801d1bf105775bf5.jpg": {
+    "image_path": "squirrel_data/test/images/s_730_jpg.rf.d0324a54205fa727801d1bf105775bf5.jpg",
+    "num_detections": 2,
+    "detections": [
+      {
+        "bbox": [
+          180.5513153076172,
+          162.19573974609375,
+          377.77227783203125,
+          292.35687255859375
+        ],
+        "confidence": 0.7622981667518616,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      },
+      {
+        "bbox": [
+          248.82080078125,
+          162.25079345703125,
+          375.4422607421875,
+          287.84564208984375
+        ],
+        "confidence": 0.7488017678260803,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "s_876_jpg.rf.ab94bbb622998fe68e5d7fae71f7624a.jpg": {
+    "image_path": "squirrel_data/test/images/s_876_jpg.rf.ab94bbb622998fe68e5d7fae71f7624a.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          403.0899353027344,
+          167.59005737304688,
+          640.0,
+          286.3345031738281
+        ],
+        "confidence": 0.7271373867988586,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "s_877_jpg.rf.43367177c31d944a578575eb78e77a27.jpg": {
+    "image_path": "squirrel_data/test/images/s_877_jpg.rf.43367177c31d944a578575eb78e77a27.jpg",
+    "num_detections": 0,
+    "detections": []
+  },
+  "s_888_jpg.rf.91355637e0f4c2db322650a5b7a02693.jpg": {
+    "image_path": "squirrel_data/test/images/s_888_jpg.rf.91355637e0f4c2db322650a5b7a02693.jpg",
+    "num_detections": 2,
+    "detections": [
+      {
+        "bbox": [
+          282.7752685546875,
+          237.7465057373047,
+          453.48602294921875,
+          384.88885498046875
+        ],
+        "confidence": 0.6672364473342896,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      },
+      {
+        "bbox": [
+          291.6273193359375,
+          238.19239807128906,
+          391.4075927734375,
+          390.103759765625
+        ],
+        "confidence": 0.617620587348938,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "s_902_jpg.rf.ab165fa89c77d617e167aeaefd064afe.jpg": {
+    "image_path": "squirrel_data/test/images/s_902_jpg.rf.ab165fa89c77d617e167aeaefd064afe.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          105.32579803466797,
+          278.9923095703125,
+          246.32122802734375,
+          408.6024169921875
+        ],
+        "confidence": 0.6237920522689819,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "stock-photo-adorable-squirrel-running-stones-pond_jpg.rf.cd1e7f13b52b37282c25b254c2614eae.jpg": {
+    "image_path": "squirrel_data/test/images/stock-photo-adorable-squirrel-running-stones-pond_jpg.rf.cd1e7f13b52b37282c25b254c2614eae.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          203.99586486816406,
+          326.56268310546875,
+          250.36106872558594,
+          394.34149169921875
+        ],
+        "confidence": 0.8525587916374207,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  },
+  "stock-photo-bottom-view-adorable-squirrel-sitting_jpg.rf.08c996a13c382782bee838d80fb61b06.jpg": {
+    "image_path": "squirrel_data/test/images/stock-photo-bottom-view-adorable-squirrel-sitting_jpg.rf.08c996a13c382782bee838d80fb61b06.jpg",
+    "num_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          530.5518188476562,
+          304.87603759765625,
+          640.0,
+          429.432861328125
+        ],
+        "confidence": 0.7573264837265015,
+        "class_id": 0,
+        "class_name": "Squirrel"
+      }
+    ]
+  }
+}

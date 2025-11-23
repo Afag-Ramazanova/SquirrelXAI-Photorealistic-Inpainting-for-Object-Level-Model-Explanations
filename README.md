@@ -26,6 +26,9 @@ This project implements a complete explainability pipeline that:
 
 The pipeline helps understand which objects are most important for model predictions by measuring how removing them affects classifier confidence.
 
+*For complete implementation details, code and results see the [end-to-end demo notebook](end_to_end_demo.ipynb)*
+
+
 ## 📁 Project Structure
 
 ```
