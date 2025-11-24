@@ -2,6 +2,10 @@
 
 A complete pipeline for generating perturbation-based explanations using object detection and photorealistic inpainting, inspired by the Splice-XAI research paper. This project uses YOLOv9 for squirrel detection and Stable Diffusion for inpainting to analyze how removing detected objects affects model confidence.
 
+Refer to Video Walkthrough to udnerstand the structure
+
+## [Video Walkthrough](https://youtu.be/TakOaJm7Uts)
+
 ## 📋 Table of Contents
 
 - [Overview](#overview)
