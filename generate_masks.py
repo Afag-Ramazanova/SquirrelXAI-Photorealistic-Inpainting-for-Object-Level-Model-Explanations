@@ -1,16 +1,29 @@
 """
 Stage 2: Mask Generation
-Generates segmentation masks from bounding boxes or uses existing masks.
-Supports bounding-box masks and optional SAM segmentation.
+
+Generates segmentation masks from bounding boxes, existing masks, or SAM.
+
+Supports:
+- Bounding-box masks (original behavior)
+- Optional use of existing masks (e.g., masks2/)
+- Optional SAM-based segmentation from YOLO bounding boxes
 """
 
 import json
 import os
+from typing import Dict, List, Tuple, Optional
+
 import cv2
 import numpy as np
-from pathlib import Path
-from typing import Dict, List, Tuple, Optional
 from tqdm import tqdm
+
+# Local utility for SAM (optional)
+try:
+    from sam_utils import load_sam_predictor, mask_from_bbox_sam
+
+    SAM_AVAILABLE = True
+except ImportError:
+    SAM_AVAILABLE = False
 
 
 def bbox_to_mask(bbox: List[float], img_shape: Tuple[int, int]) -> np.ndarray:
@@ -22,7 +35,7 @@ def bbox_to_mask(bbox: List[float], img_shape: Tuple[int, int]) -> np.ndarray:
         img_shape: (height, width) of the image
 
     Returns:
-        Binary mask as numpy array
+        Binary mask as numpy array (0 or 255)
     """
     h, w = img_shape
     mask = np.zeros((h, w), dtype=np.uint8)
@@ -63,6 +76,9 @@ def generate_masks_from_detections(
     images_dir: str,
     output_dir: str,
     use_existing_masks: Optional[str] = None,
+    use_sam: bool = False,
+    sam_checkpoint: Optional[str] = None,
+    sam_model_type: str = "vit_b",
 ) -> Dict[str, str]:
     """
     Generate masks from detection results.
@@ -72,6 +88,9 @@ def generate_masks_from_detections(
         images_dir: Directory containing test images
         output_dir: Directory to save generated masks
         use_existing_masks: Optional directory with existing masks to use
+        use_sam: If True, use SAM to get segmentation masks from YOLO bboxes
+        sam_checkpoint: Path to SAM checkpoint (.pth) when use_sam=True
+        sam_model_type: SAM model type key 'vit_b'
 
     Returns:
         Dictionary mapping image names to mask paths
@@ -83,47 +102,71 @@ def generate_masks_from_detections(
     # Create output directory
     os.makedirs(output_dir, exist_ok=True)
 
-    mask_paths = {}
+    # Prepare SAM predictor if requested
+    sam_predictor = None
+    if use_sam:
+        if not SAM_AVAILABLE:
+            raise ImportError(
+                "SAM utilities not available. "
+                "Make sure segment-anything and sam_utils.py are installed."
+            )
+        if sam_checkpoint is None:
+            raise ValueError("use_sam=True but sam_checkpoint is None.")
+        sam_predictor = load_sam_predictor(
+            checkpoint_path=sam_checkpoint,
+            model_type=sam_model_type,
+        )
+
+    mask_paths: Dict[str, str] = {}
 
     # Process each image
     for img_name, det_data in tqdm(detections.items(), desc="Generating masks"):
         img_path = os.path.join(images_dir, img_name)
 
-        # Check if we should use existing mask
+        # If requested, use an existing pre-made mask (e.g., masks2/)
         if use_existing_masks:
-            # Try to find existing mask
             mask_name = img_name.rsplit(".", 1)[0] + "_mask.png"
             existing_mask_path = os.path.join(use_existing_masks, mask_name)
 
             if os.path.exists(existing_mask_path):
-                # Copy existing mask
-                output_mask_path = os.path.join(output_dir, mask_name)
                 import shutil
 
+                output_mask_path = os.path.join(output_dir, mask_name)
                 shutil.copy2(existing_mask_path, output_mask_path)
                 mask_paths[img_name] = output_mask_path
                 continue
 
-        # Load image to get dimensions
+        # Load image
         img = cv2.imread(img_path)
         if img is None:
             print(f"Warning: Could not load image {img_path}")
             continue
 
         h, w = img.shape[:2]
+        masks: List[np.ndarray] = []
 
-        # Generate mask from bounding boxes
-        masks = []
-        for det in det_data["detections"]:
+        # Generate mask(s) from detections
+        for det in det_data.get("detections", []):
             bbox = det["bbox"]
-            mask = bbox_to_mask(bbox, (h, w))
+
+            if use_sam and sam_predictor is not None:
+                try:
+                    mask = mask_from_bbox_sam(sam_predictor, img, bbox)
+                except Exception as e:
+                    print(
+                        f"Warning: SAM failed for {img_name} with bbox {bbox}: {e}. "
+                        "Falling back to rectangular bbox mask."
+                    )
+                    mask = bbox_to_mask(bbox, (h, w))
+            else:
+                mask = bbox_to_mask(bbox, (h, w))
+
             masks.append(mask)
 
-        # Combine all masks
+        # Combine all masks for this image
         if masks:
             combined_mask = combine_masks(masks)
         else:
-            # No detections - create empty mask
             combined_mask = np.zeros((h, w), dtype=np.uint8)
 
         # Save mask
@@ -168,6 +211,23 @@ if __name__ == "__main__":
         default=None,
         help="Optional: Directory with existing masks to use (e.g., masks2/)",
     )
+    parser.add_argument(
+        "--use-sam",
+        action="store_true",
+        help="Use SAM to generate segmentation masks from YOLO bounding boxes",
+    )
+    parser.add_argument(
+        "--sam-checkpoint",
+        type=str,
+        default=None,
+        help="Path to SAM checkpoint (.pth) when --use-sam is set",
+    )
+    parser.add_argument(
+        "--sam-model-type",
+        type=str,
+        default="vit_b",
+        help="SAM model type (e.g., vit_b, vit_l, vit_h)",
+    )
 
     args = parser.parse_args()
 
@@ -176,4 +236,7 @@ if __name__ == "__main__":
         images_dir=args.images,
         output_dir=args.output,
         use_existing_masks=args.use_existing,
+        use_sam=args.use_sam,
+        sam_checkpoint=args.sam_checkpoint,
+        sam_model_type=args.sam_model_type,
     )
