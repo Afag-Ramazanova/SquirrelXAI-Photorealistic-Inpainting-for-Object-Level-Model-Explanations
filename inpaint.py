@@ -245,6 +245,7 @@ def batch_inpaint(
     negative_prompt: str = DEFAULT_NEGATIVE_PROMPT,
     delay_between_requests: float = 12.0,
     max_retries: int = 3,
+    invert_mask: bool = False,  # NEW
 ) -> Dict[str, str]:
     """
     Perform batch inpainting on all images.
@@ -256,9 +257,10 @@ def batch_inpaint(
         backend: Inpainting backend to use
         prompt: Inpainting prompt
         negative_prompt: Negative prompt
-        delay_between_requests: Delay in seconds between API requests (default: 12.0)
-                              For accounts with <$5 credit: 6 req/min = 10s minimum, use 12s+ to be safe
-        max_retries: Maximum number of retries for rate limit errors (default: 3)
+        delay_between_requests: Delay in seconds between API requests
+        max_retries: Maximum number of retries for rate limit errors
+        invert_mask: If True, invert each mask before inpainting
+                     (useful for background-replacement experiments)
 
     Returns:
         Dictionary mapping image names to inpainted image paths
@@ -270,6 +272,12 @@ def batch_inpaint(
     # Create output directory
     backend_output_dir = os.path.join(output_dir, backend)
     os.makedirs(backend_output_dir, exist_ok=True)
+
+    # If we’re going to invert masks, create a temp mask directory
+    inverted_mask_dir = None
+    if invert_mask:
+        inverted_mask_dir = os.path.join(backend_output_dir, "inverted_masks")
+        os.makedirs(inverted_mask_dir, exist_ok=True)
 
     inpainted_paths = {}
 
@@ -287,6 +295,23 @@ def batch_inpaint(
             print(f"Warning: Mask not found: {mask_path}")
             continue
 
+        # Decide which mask file to actually use
+        mask_to_use = mask_path
+        if invert_mask:
+            # Load original mask in grayscale
+            mask_img = cv2.imread(mask_path, cv2.IMREAD_GRAYSCALE)
+            if mask_img is None:
+                print(f"Warning: Could not read mask for inversion: {mask_path}")
+                continue
+
+            # Invert: 255 -> 0, 0 -> 255
+            inverted = cv2.bitwise_not(mask_img)
+
+            # Save to temporary file
+            tmp_name = Path(mask_path).stem + "_inv.png"
+            mask_to_use = os.path.join(inverted_mask_dir, tmp_name)
+            cv2.imwrite(mask_to_use, inverted)
+
         # Perform inpainting with retry logic for rate limiting
         inpainted = None
         retry_count = 0
@@ -294,12 +319,14 @@ def batch_inpaint(
         while retry_count <= max_retries:
             try:
                 inpainted = inpaint_with_stable_diffusion(
-                    img_path, mask_path, prompt=prompt, negative_prompt=negative_prompt
+                    img_path,
+                    mask_to_use,
+                    prompt=prompt,
+                    negative_prompt=negative_prompt,
                 )
                 break  # Success, exit retry loop
             except Exception as e:
                 error_str = str(e)
-                # Check if it's a rate limit error (429)
                 if (
                     "429" in error_str
                     or "throttled" in error_str.lower()
@@ -307,7 +334,6 @@ def batch_inpaint(
                 ):
                     retry_count += 1
                     if retry_count <= max_retries:
-                        # Exponential backoff: wait longer on each retry
                         wait_time = delay_between_requests * (2**retry_count)
                         print(
                             f"\n⚠ Rate limited. Waiting {wait_time:.1f}s before retry {retry_count}/{max_retries}..."
@@ -319,7 +345,6 @@ def batch_inpaint(
                         )
                         break
                 else:
-                    # Not a rate limit error, don't retry
                     print(f"\n✗ Error for {img_name}: {error_str}")
                     break
 
@@ -333,8 +358,7 @@ def batch_inpaint(
         cv2.imwrite(output_path, cv2.cvtColor(inpainted, cv2.COLOR_RGB2BGR))
         inpainted_paths[img_name] = output_path
 
-        # Add delay between requests to respect rate limits
-        # For accounts with <$5: 6 req/min = 10s minimum, using 12s+ to be safe
+        # Rate-limit delay
         if delay_between_requests > 0:
             time.sleep(delay_between_requests)
 
@@ -405,10 +429,22 @@ if __name__ == "__main__":
         default=3,
         help="Maximum number of retries for rate limit errors (default: 3)",
     )
+    parser.add_argument(
+        "--mode",
+        type=str,
+        default="object_removal",
+        choices=["object_removal", "background_replacement", "object_replacement"],
+        help="Perturbation mode: remove object, replace background, or replace object.",
+    )
+    parser.add_argument(
+        "--invert-mask",
+        action="store_true",
+        help="Invert masks before inpainting (edit background instead of object)",
+    )
 
     args = parser.parse_args()
 
-    # Test backend if requested
+    # Test backend
     if args.test:
         if args.test_image and args.test_mask:
             test_backend(
@@ -427,4 +463,5 @@ if __name__ == "__main__":
         negative_prompt=args.negative_prompt,
         delay_between_requests=args.delay,
         max_retries=args.max_retries,
+        invert_mask=args.invert_mask,
     )

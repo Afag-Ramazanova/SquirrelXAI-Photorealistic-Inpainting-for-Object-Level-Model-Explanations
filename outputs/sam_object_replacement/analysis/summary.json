@@ -1,0 +1,14 @@
+{
+  "total_images": 62,
+  "mean_detection_drop": 0.9193548387096774,
+  "std_detection_drop": 0.7954457889592002,
+  "mean_detection_removal_rate": 0.6908602150537635,
+  "mean_avg_confidence_drop": 0.5493120366046506,
+  "mean_max_confidence_drop": 0.5835369772488072,
+  "total_all_removed": 43,
+  "FLIP_RATE": 0.6935483870967742,
+  "total_partial_removal": 4,
+  "partial_removal_rate": 0.06451612903225806,
+  "mean_original_detections": 1.2258064516129032,
+  "mean_inpainted_detections": 0.3064516129032258
+}
